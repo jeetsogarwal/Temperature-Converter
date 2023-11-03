@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <img src="a.jpeg" class="img" />
+      <h4>Put Your Values Down :</h4>
+      <input
+        type="number"
+        id="input"
+        placeholder="Enter temperature"
+        oninput="calculateTemperature()"
+      />
+      <h4 class="h">Choose Your Scale :</h4>
+      <select id="unit" onchange="calculateTemperature()">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <h2 id="output">Temperature :</h2>
+    </div>
+    <script src="./file-mmq.js"></script>
+  </body>
+</html>
